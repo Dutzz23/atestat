@@ -53,6 +53,11 @@
     background: transparent;
 }
 
+.Navbar-Link:focus,
+.Navbar-Link:hover{
+    color: white;
+}
+
 .Navbar-BurgerButton {
     position: absolute;
     right: 20px;
