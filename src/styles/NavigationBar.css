@@ -1,0 +1,122 @@
+.Navbar {
+    z-index: 3;
+    margin-top: 0;
+    height: 56px;
+    padding: 8px 36px;
+    display: flex;
+    justify-content: space-between;
+    background: #212529;
+}
+
+
+.Navbar-LogoAndAppName {
+    display: flex;
+    align-items: center;
+}
+
+.Navbar-Logo {
+    height: 30px;
+    width: 30px;
+    margin-right: 5px;
+}
+
+.Navbar-AppName {
+    color: #ffffff;
+    text-decoration: none;
+    height: 30px;
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+
+.Navbar-Links {
+    position: absolute;
+    top: 55px;
+    left: 0;
+    padding-top: 2vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    background: #212529;
+    width: 100vw;
+    border-radius: 0 0 5px 5px;
+}
+
+.Navbar-Link {
+    color: #ffffff;
+    width: 96vw;
+    border-radius: 5px;
+    border: none;
+    text-decoration: none;
+    padding: 8px 0 10px 8px;
+    text-align: left;
+    margin: 0 2vw 2vw 2vw;
+    background: transparent;
+}
+
+.Navbar-BurgerButton {
+    position: absolute;
+    right: 20px;
+    background: transparent;
+    border: none;
+}
+
+.Navbar-Toggle {
+    display: none;
+}
+
+.Navbar-Dropdown {
+    position: relative;
+
+}
+
+.Navbar-DropdownList {
+    background: #212529;
+    position: absolute;
+    padding: 10px;
+    list-style: none;
+}
+
+.Navbar-DropdownItem {
+    width: 200px;
+    height: fit-content;
+    padding: 8px 0 8px 8px;
+    background: #ffffff;
+    justify-content: center;
+}
+
+.Navbar-DropdownItemLink {
+    text-decoration: none;
+    color: #212529;
+}
+
+.Navbar-DropdownToggle {
+    display: none;
+}
+
+@media screen and (min-width: 992px) {
+    .Navbar-BurgerButton {
+        display: none;
+    }
+
+    .Navbar-Links {
+        padding: 0;
+        position: initial;
+        background: transparent;
+        display: flex;
+        flex-direction: row;
+        max-width: 60vw;
+    }
+
+    .Navbar-DropdownList {
+        z-index: 3;
+        top: 40px;
+        left: -60px;
+    }
+
+    .Navbar-Link {
+        justify-items: right;
+        background: transparent;
+        width: 80px;
+        text-align: right;
+    }
+}

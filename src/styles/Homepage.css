@@ -1,0 +1,93 @@
+.Homepage {
+
+}
+
+.Homepage-Title {
+    margin-top: 30vh;
+    margin-left: 10vw;
+    font-size: 3rem;
+    color: white;
+}
+
+.Homepage-Subtitle {
+    color: #cac5d0;
+    font-size: 2rem;
+    margin-top: 5vh;
+    margin-left: 15vw;
+}
+
+.Homepage-Subtitle strong{
+    display: block;
+    margin-left: 12vw;
+}
+
+.Homepage-Button{
+    color: white;
+    height: 40px;
+    box-shadow: rgba(0, 0, 0, 0.09) 0 10px 20px;
+    border-radius: 20px;
+    background: #4b00a5;
+    border: none;
+    padding: 0 20px;
+    position: absolute;
+    bottom: 10vh;
+    right: 15vw;
+    line-height: 230%;
+    text-underline: none;
+}
+
+.Homepage-background {
+    animation:slide 3s ease-in-out infinite alternate;
+    background-image: linear-gradient(-60deg, #0f011f 50%, #4b00a5 50%);
+    bottom:0;
+    left:-50%;
+    opacity:.5;
+    position:fixed;
+    right:-50%;
+    top:0;
+    z-index:-2;
+}
+
+.Homepage-background2 {
+    animation-direction:alternate-reverse;
+    animation-duration:15s;
+}
+
+.Homepage-background3 {
+    animation-duration:18s;
+}
+
+@keyframes slide {
+    0% {
+        transform:translateX(-25%);
+    }
+    100% {
+        transform:translateX(25%);
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .Homepage-Title {
+        font-size: 4rem;
+        margin-top: 200px;
+        margin-left: 200px;
+    }
+
+    .Homepage-Subtitle {
+        font-size: 2.5rem;
+        margin-top: 50px;
+        margin-left: 220px;
+    }
+
+    .Homepage-Subtitle strong {
+        display: initial;
+        margin: 0;
+    }
+
+    .Homepage-Button {
+        border-radius: 30px;
+        height: 60px;
+        padding: 0 30px;
+        line-height: 350%;
+    }
+}

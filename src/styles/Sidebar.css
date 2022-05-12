@@ -1,0 +1,33 @@
+.Sidebar {
+    padding: 30px 20px;
+    display: none;
+    margin: 0;
+    color: white;
+}
+
+.Sidebar-Title {
+    margin-top: 20px;
+    font-size: 2.5rem;
+}
+
+.Sidebar-Text {
+    margin-top: 30px;
+    font-size: 1.2rem;
+    text-align: justify;
+}
+
+@media screen and (min-width: 992px) {
+    .Sidebar {
+        display: block;
+        width: max(15vw + 1px, 301px);
+        min-width: 300px;
+        background-color: #282c34;
+        left: 0;
+        top: 0;
+        position: fixed;
+        padding-top: 56px;
+        height: 100vh;
+        z-index: -1;
+    }
+
+}

@@ -1,0 +1,9 @@
+.MainPage {
+ z-index: -100;
+}
+@media screen and (min-width: 992px) {
+    .MainPage {
+        margin: 0 0 0 max(15vw, 300px);
+
+    }
+}

@@ -1,0 +1,26 @@
+.CoinFlipper{
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    height: calc(100vh - 58px);
+}
+
+.CoinFlipper-playButton{
+    cursor: pointer;
+    background: #4b00a5;
+    height: 50px;
+    width: 100px;
+    border: none;
+    border-radius: 25px;
+    padding: 10px 20px;
+    line-height: 20px;
+    color: white;
+}
+
+.CoinFlipper-gameState{
+    padding: 20px 0;
+    font-size: 1.5rem;
+}
