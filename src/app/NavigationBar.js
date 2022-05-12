@@ -63,7 +63,7 @@ class NavigationBar extends Component {
                             }
                         </ul>
                     </div>
-                    <Link className="Navbar-Link" to="/">GitHub</Link>
+                    <a className="Navbar-Link" href="https://github.com/Dutzz23/atestat">GitHub</a>
                 </div>
             </nav>
         );
